@@ -51,7 +51,7 @@ var nn = document.getElementById("nn").value;
 var tel = document.getElementById("tel").value;
      liff.getProfile().then(function(profile) {
             var uid = profile.userId;
-            var dis = profile.displayName;
+            var dis = liff.getDecodedIDToken().email;
             var pic = profile.pictureUrl;
         var xos = liff.getOS();
   x.innerHTML = " กำลังลงทะเบียน... ";
